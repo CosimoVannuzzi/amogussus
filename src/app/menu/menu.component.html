@@ -1,0 +1,54 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>        <!-- SideNav Angular matirial -->
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">    <!-- Menu on the left -->
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <img style="position: fixed;" src="assets/Menu.png" alt="nulla">
+    </button>
+
+  </div>
+
+
+  <h3>Le mie liste</h3>
+
+
+  <div class="toolbar">    <!-- icons with ghost function -->
+
+    <button class="img"><img src="assets\Assistance.png" ></button>
+    <button (click)="onClickMostra()" class="img"><img src="assets\Utente.png" ></button>
+    <button class="img"><img src="\assets\Log out.png" ></button>
+
+  </div>
+
+  <p class="pList" *ngIf="visibile">
+    <app-new-list></app-new-list>
+  </p>
+
+  <form *ngIf="mostra" id="login-form">
+    <h1>Authentication</h1>
+    <p>Fill out this form to login.</p>  <!-- Login -->
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Enter your email" id="email" name="email" required/>
+
+    <label for="psw">Password</label>
+    <input type="password" placeholder="Enter your password" id="psw" name="password" required/>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <div class="AddList">    <!-- Add list -->
+
+    <button (click)="onClickVisibile()" ><img src="assets\AddList.png" ></button>
+
+  </div>
+
+
+</mat-drawer-container>
+

@@ -1,0 +1,84 @@
+.example-container {
+  height: 100%;           //Containar main schreen
+}
+
+.example-sidenav-content {
+  position: relative;       //SideNAve
+  left: 1%;
+  top: 1%;
+}
+
+.example-sidenav {
+  background-color: red; //SideNav
+  width: 20%;
+}
+
+.toolbar {
+  position: fixed;        //icons on the top-right with ghost function
+  display:inline-flex;
+  right: 1%;
+  top: 1%;
+}
+
+.img {
+  border: none;
+  background-color: transparent;   //Buttons of the icons
+  padding: 5px;
+  width: 35%;
+  height: 41px;
+}
+
+
+.img img {
+  height: 24px;
+}
+
+example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+form {
+position: absolute;
+left: 35%;
+top: 30%;
+z-index: 1080;
+}
+
+h3 {
+  font-style: italic;
+  color:rgb(180,38,191);
+  position: absolute;
+  top: 2%;
+  left: 43%;
+}
+
+.AddList {
+  position: absolute;
+  right: 4%;
+  bottom: 10%;
+  width: fit-content;
+}
+
+.AddList button{
+  border: none;
+  background-color: transparent;
+}
+
+.pList {
+  position: relative;
+  width: 40%;
+  top: 30%;
+  left: 29%;
+}
+
+
+
+
+
+
